@@ -14,29 +14,37 @@ set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set number                  " add line numbers
+set relativenumber          " add relative line numbers
 set wildmode=longest,list   " get bash-like tab completions
-set cc=80                  " set an 80 column border for good coding style
-
+set cc=80                   " set an 80 column border for good coding style
 set colorcolumn=0           " removes the ugly red bar in the middle of the panel
-" set paste                   " allows for paste with shift and right click
 set smarttab 				" smarttab
 set noswapfile
 set clipboard=unnamedplus   " enables the clipboard between other applications and nvim
 set title
 set wildmenu
-
-filetype plugin indent on   "allow auto-indenting depending on file type
+filetype plugin indent on   " allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
 set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-" set spell                 " enable spell check (may need to download language package)
-" set noswapfile            " disable creating swap file
-" set backupdir=~/.cache/vim " Directory to store backup files.
+set spell                   " enable spell check (may need to download language package)
+
+" =========================================
+" Cursor Configurations
+" =========================================
+
+
+" =========================================
+" Installed Plugins
+" =========================================
+
 call plug#begin('~/.config/nvim/autoload/')
- "Plugin Section
+
+" ====== Plugin Section
+ 
  Plug 'dracula/vim'
  Plug 'preservim/nerdtree'
  Plug 'ryanoasis/vim-devicons'
@@ -52,22 +60,19 @@ call plug#begin('~/.config/nvim/autoload/')
  Plug 'plasticboy/vim-markdown'
  Plug 'vim-airline/vim-airline-themes'
  Plug 'neovim/nvim-lspconfig'
-
-call plug#end()
-
-
-
-
+ Plug 'gosukiwi/vim-atom-dark'
+ Plug 'kyoz/purify'
+ Plug 'arcticicestudio/nord-vim'
+ Plug 'folke/tokyonight.nvim'
+ Plug 'EdenEast/nightfox.nvim'
+ Plug 'bluz71/vim-nightfly-guicolors'
+ call plug#end()
 
 " ======================================
 " THEMING CONFIGURATIONS
 " ======================================
-colorscheme desert
 
-
-
-
-
+colorscheme tokyonight
 
 " ======================================
 " Plugin Configurations
@@ -75,7 +80,7 @@ colorscheme desert
 
 " ====== NerdTree Plugin
 
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
 
 let NERDTreeShowHidden=1
 
@@ -90,29 +95,38 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-
-
 " ======================================
 " Keyboard Shortcuts
 " ======================================
 
-
 " Normal mode remappings
+
 nnoremap <C-q> :q!<CR>
 nnoremap <F4> :bd<CR>
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :sp<CR>:terminal<CR>
 
+" Visual Mode remappings
 
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+endif
 
+" ======================================
+" Lua Configurations
+" ======================================
 
 lua require('Bader-Dev')
 
-
-
-
-
-
-
+" ======================================
+" Sourcings Of Plugin Configurations
+" ====================================== 
+"
+" ====== COC Configuretions
 
 source $HOME/.config/nvim/plug-config/coc.vim
+
