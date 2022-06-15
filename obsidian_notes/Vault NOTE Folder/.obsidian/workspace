@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "6ced484be6cbfa6e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f64d1ed8884afae",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Github Tokens/Tokens.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "27c8290b146ea8b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "02d6346ce9c3999c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44cc9aeec476a0c1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f35d6748fce7367c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2b233f490126f786",
+    "type": "split",
+    "children": [
+      {
+        "id": "64107ac87afa28fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c05734824aeab45a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Github Tokens/Tokens.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6f64d1ed8884afae",
+  "lastOpenFiles": [
+    "Github Tokens/Tokens.md",
+    "noted.md",
+    "Untitled.md"
+  ]
+}
