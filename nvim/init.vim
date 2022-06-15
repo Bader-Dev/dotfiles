@@ -18,7 +18,7 @@ set wildmode=longest,list   " get bash-like tab completions
 set cc=80                  " set an 80 column border for good coding style
 
 set colorcolumn=0           " removes the ugly red bar in the middle of the panel
-set paste                   " allows for paste with shit and right click
+" set paste                   " allows for paste with shift and right click
 set smarttab 				" smarttab
 set noswapfile
 set clipboard=unnamedplus   " enables the clipboard between other applications and nvim
@@ -51,6 +51,7 @@ call plug#begin('~/.config/nvim/autoload/')
  Plug 'sheerun/vim-polyglot'
  Plug 'plasticboy/vim-markdown'
  Plug 'vim-airline/vim-airline-themes'
+ Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
@@ -61,7 +62,7 @@ call plug#end()
 " ======================================
 " THEMING CONFIGURATIONS
 " ======================================
-colorscheme dracula
+colorscheme desert
 
 
 
@@ -105,4 +106,13 @@ nnoremap <F6> :sp<CR>:terminal<CR>
 
 
 
+lua require('Bader-Dev')
 
+
+
+
+
+
+
+
+source $HOME/.config/nvim/plug-config/coc.vim
