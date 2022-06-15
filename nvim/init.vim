@@ -62,10 +62,10 @@ call plug#begin('~/.config/nvim/autoload/')
  Plug 'neovim/nvim-lspconfig'
  Plug 'gosukiwi/vim-atom-dark'
  Plug 'kyoz/purify'
- Plug 'arcticicestudio/nord-vim'
  Plug 'folke/tokyonight.nvim'
  Plug 'EdenEast/nightfox.nvim'
- Plug 'bluz71/vim-nightfly-guicolors'
+ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+ Plug 'nvim-lua/plenary.nvim'
  call plug#end()
 
 " ======================================
