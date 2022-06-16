@@ -18,7 +18,7 @@ set relativenumber          " add relative line numbers
 set wildmode=longest,list   " get bash-like tab completions
 set cc=80                   " set an 80 column border for good coding style
 set colorcolumn=0           " removes the ugly red bar in the middle of the panel
-set smarttab 				" smarttab
+set smarttab                " smarttab
 set noswapfile
 set clipboard=unnamedplus   " enables the clipboard between other applications and nvim
 set title
@@ -41,13 +41,13 @@ set spell                   " enable spell check (may need to download language 
 " Installed Plugins
 " =========================================
 
-call plug#begin('~/.config/nvim/autoload/')
+call plug#begin('~/.config/nvim/autoload')
 
-" ====== Plugin Section
+" ====== Plugin Section ======
  
- Plug 'dracula/vim'
- Plug 'preservim/nerdtree'
- Plug 'ryanoasis/vim-devicons'
+ Plug 'dracula/vim' " The Dracula Theme
+ Plug 'preservim/nerdtree' " NerdTree Plugin
+ Plug 'ryanoasis/vim-devicons' " Plugin For Icons In Vim
  Plug 'SirVer/ultisnips'
  Plug 'honza/vim-snippets'
  Plug 'scrooloose/nerdtree'
@@ -66,7 +66,14 @@ call plug#begin('~/.config/nvim/autoload/')
  Plug 'EdenEast/nightfox.nvim'
  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
  Plug 'nvim-lua/plenary.nvim'
+ Plug 'nvim-telescope/telescope.nvim'
+ Plug 'BurntSushi/ripgrep'
+ Plug 'phaazon/hop.nvim'
+ Plug 'kyazdani42/nvim-web-devicons'
+ Plug 'romgrk/barbar.nvim'
+ 
  call plug#end()
+
 
 " ======================================
 " THEMING CONFIGURATIONS
@@ -78,7 +85,7 @@ colorscheme tokyonight
 " Plugin Configurations
 " ======================================
 
-" ====== NerdTree Plugin
+" ====== NerdTree Plugin ======
 
 " autocmd VimEnter * NERDTree | wincmd p
 
@@ -88,33 +95,13 @@ let NERDTreeShowHidden=1
 " let g:NERDTreeDirArrowExpandable = '?'
 " let g:NERDTreeDirArrowCollapsible = '?'
 
-" ====== Airline Plugin
+" ====== Airline Plugin ======
 
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
-" ======================================
-" Keyboard Shortcuts
-" ======================================
-
-" Normal mode remappings
-
-nnoremap <C-q> :q!<CR>
-nnoremap <F4> :bd<CR>
-nnoremap <F5> :NERDTreeToggle<CR>
-nnoremap <F6> :sp<CR>:terminal<CR>
-
-" Visual Mode remappings
-
-let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
-if executable(s:clip)
-    augroup WSLYank
-        autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
-    augroup END
-endif
 
 " ======================================
 " Lua Configurations
@@ -125,8 +112,90 @@ lua require('Bader-Dev')
 " ======================================
 " Sourcings Of Plugin Configurations
 " ====================================== 
-"
-" ====== COC Configuretions
+
+" ====== COC Configuretions ======
 
 source $HOME/.config/nvim/plug-config/coc.vim
+
+" ======================================
+" Keyboard Bindings
+" ======================================
+
+" ====== General Keybindings ====
+
+
+
+" ====== Normal mode remappings ======
+
+" === Leader Key Mapping ===
+
+let mapleader = " " " map leader to Space
+
+" noremap <C-q> :q!<CR>
+" nnoremap <F3> :bd<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F4> :sp<CR>:terminal<CR>
+
+" === Telescope Keybindings ===
+
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+
+" === NerdCommenter Keybindings ===
+
+nnoremap <leader>p <Plug>NERDCommenterToggle
+
+" === Hop Keybindings ===
+
+nnoremap <leader>fl <cmd>:HopLine<cr>
+
+" === Vim-Snippets ===
+
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+
+
+" ====== Visual Mode remappings ======
+
+let s:clip = '/mnt/c/Windows/System31/clip.exe'  " change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @-1) | endif
+    augroup END
+endif
+
+" ====== Insert Mode remappings ======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

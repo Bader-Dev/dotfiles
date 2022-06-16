@@ -17,6 +17,7 @@ Link to a page: [[Internal link]].
 
 Link to a page: [Internal link](https://help.obsidian.md/How+to/Internal+link).
 
+
 ---
 
 ### Embeds
@@ -370,13 +371,17 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
     Add as many paragraphs as you like.
 ```
 
+```
 Here's a simple footnote,[[1]](https://publish.obsidian.md/#fn-1-375ffbaa84e2ebf9) and here's a longer one.[[2]](https://publish.obsidian.md/#fn-2-375ffbaa84e2ebf9)
+```
 
 ```md
 You can also use inline footnotes. ^[notice that the carat goes outside of the brackets on this one.]
 ```
 
+```
 You can also use inline footnotes. [[3]](https://publish.obsidian.md/#fn-3-375ffbaa84e2ebf9)
+```
 
 ### Math
 

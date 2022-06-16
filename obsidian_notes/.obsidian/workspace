@@ -4,13 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "fe12ea657cfacb37",
+        "id": "cca3903f7bf327e8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Vault NOTE Folder/Web Development Notes/Web Tools Notes/Tools Installation.md",
+            "file": "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
             "mode": "source",
+            "backlinks": false,
             "source": false
           }
         }
@@ -25,6 +26,7 @@
       {
         "id": "188510533bc4657a",
         "type": "tabs",
+        "dimension": 65.58044806517312,
         "children": [
           {
             "id": "d63178be79ba15f6",
@@ -40,7 +42,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ide",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -58,17 +60,32 @@
             }
           }
         ]
+      },
+      {
+        "id": "ad01ed45a44a7cdb",
+        "type": "tabs",
+        "dimension": 34.419551934826885,
+        "children": [
+          {
+            "id": "9b345cd6d7e07b60",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237
   },
   "right": {
     "id": "2698d56ad5ec2f66",
     "type": "split",
     "children": [
       {
-        "id": "35e9b9c4134a27d4",
+        "id": "78128c353906daa7",
         "type": "tabs",
         "children": [
           {
@@ -77,8 +94,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vault NOTE Folder/Web Development Notes/Web Tools Notes/Tools Installation.md",
-                "collapseAll": false,
+                "file": "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -88,6 +105,22 @@
               }
             }
           },
+          {
+            "id": "7decdf61b5fd446e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Main Vault/Web Development Notes/Back End Development/Untitled 7.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "5f5fe5fd9b4ea627",
+        "type": "tabs",
+        "children": [
           {
             "id": "75ae13c65ce15b0b",
             "type": "leaf",
@@ -100,20 +133,24 @@
             }
           },
           {
-            "id": "7decdf61b5fd446e",
+            "id": "9f40200d5fdd0f54",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "Vault NOTE Folder/Web Development Notes/Web Tools Notes/Tools Installation.md"
-              }
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "35e9b9c4134a27d4",
+        "type": "tabs",
+        "children": [
           {
-            "id": "9b345cd6d7e07b60",
+            "id": "0f7bc2a325165992",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "juggl_style",
               "state": {}
             }
           },
@@ -124,40 +161,25 @@
               "type": "juggl_nodes",
               "state": {}
             }
-          },
-          {
-            "id": "0f7bc2a325165992",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {}
-            }
-          },
-          {
-            "id": "9f40200d5fdd0f54",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 252.5
   },
-  "active": "fe12ea657cfacb37",
+  "active": "cca3903f7bf327e8",
   "lastOpenFiles": [
-    "Vault NOTE Folder/Web Development Notes/Web Tools Notes/Tools Installation.md",
-    "Vault NOTE Folder/Web Development Notes/Programing Languages/Untitled.md",
-    "Vault NOTE Folder/Web Development Notes/IDEs Setup/Neovim/Neovim Installation.md",
+    "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
+    "Main Vault/Web Development Notes/IDEs Setup/Neovim/Neovim Installation.md",
+    "Main Vault/Amazon Books Notes/EBooks To Read.md",
     "Obsidian Help Guide/Help Guide For Obsidian.md",
+    "Install.md",
+    "1.md",
+    "3.md",
+    "Obsidian Help Guide/Untitled.md",
     "Image Banners/obs_banner.png",
-    "Image Banners/banner first.jpg",
-    "Vault NOTE Folder/Web Development Notes/Untitled.md",
-    "Vault NOTE Folder/Web Tools/Untitled.md",
-    "Vault NOTE Folder/Torrents Notes/Test Tables.md",
-    "Vault NOTE Folder/Web Development Notes/Web Frameworks Notes/ViewJs Notes/Untitled.md"
+    "Main Vault/Web Development Notes/GIT Notes/Private & Public SSH Keys.md"
   ]
 }

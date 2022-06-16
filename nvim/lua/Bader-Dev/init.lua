@@ -1,2 +1,2 @@
 require('Bader-Dev.lspconfig')
-require('Badar-dev.hop')
+require('Bader-Dev.hop')
