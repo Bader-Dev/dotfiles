@@ -1,5 +1,5 @@
 " ==================================
-" General
+" GENERAL SETTINGS ===>
 " ==================================
 
 set nocompatible            " disable compatibility to old-time v:i
@@ -33,56 +33,57 @@ set ttyfast                 " Speed up scrolling in Vim
 set spell                   " enable spell check (may need to download language package)
 
 " =========================================
-" Cursor Configurations
-" =========================================
-
-
-" =========================================
-" Installed Plugins
+" INSTALLED PLUGINGS ===> 
 " =========================================
 
 call plug#begin('~/.config/nvim/autoload')
 
 " ====== Plugin Section ======
  
- Plug 'dracula/vim' " The Dracula Theme
+ " === General Coding Plugins ===
+ 
+ Plug 'nvim-lua/plenary.nvim' " Used By Telescope As A Depandancy
+ Plug 'nvim-telescope/telescope.nvim' " Telescope Plugin To Search File System of A Project
+ Plug 'BurntSushi/ripgrep' " Used As A dependancy By The Telescope Pluging
+ Plug 'phaazon/hop.nvim' " Plugin To use To Hop over A document By A set O Letters
  Plug 'preservim/nerdtree' " NerdTree Plugin
- Plug 'ryanoasis/vim-devicons' " Plugin For Icons In Vim
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
+ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Highlighting Code
+
+" === Lsp Plugins ===
+ 
+ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Vscode Completion Tool That Uses Lsp Configurations
+ Plug 'neovim/nvim-lspconfig' " Lsp Config To config LSPs
+ " Plug 'SirVer/ultisnips' 
+ Plug 'honza/vim-snippets' 
+ Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
+ 
+ " === Theme Plugins ===
+
+ Plug 'folke/tokyonight.nvim' " TokyoNight Theme
+ Plug 'EdenEast/nightfox.nvim' " Nightfox Theme
+ Plug 'sainnhe/sonokai' " Sonokai Theme 
+
+ " === UI/UX Plugins ===
+
  Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
- Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
- Plug 'vim-airline/vim-airline'
- Plug 'jiangmiao/auto-pairs'
- Plug 'sheerun/vim-polyglot'
- Plug 'plasticboy/vim-markdown'
- Plug 'vim-airline/vim-airline-themes'
- Plug 'neovim/nvim-lspconfig'
- Plug 'gosukiwi/vim-atom-dark'
- Plug 'kyoz/purify'
- Plug 'folke/tokyonight.nvim'
- Plug 'EdenEast/nightfox.nvim'
- Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
- Plug 'nvim-lua/plenary.nvim'
- Plug 'nvim-telescope/telescope.nvim'
- Plug 'BurntSushi/ripgrep'
- Plug 'phaazon/hop.nvim'
+" Plug 'preservim/nerdcommenter'
+ Plug 'mhinz/vim-startify' " Nice Looking Starting Page
+ Plug 'ryanoasis/vim-devicons' " Plugin For Icons In Vim 
+ Plug 'vim-airline/vim-airline' " Nice Looking Bottom Bar
+ Plug 'vim-airline/vim-airline-themes' " Vim Airine Themes Plugin
  Plug 'kyazdani42/nvim-web-devicons'
  Plug 'romgrk/barbar.nvim'
- 
+
  call plug#end()
 
+" ======================================
+" THEMING CONFIGURATIONS ===>
+" ======================================
+
+colorscheme sonokai
 
 " ======================================
-" THEMING CONFIGURATIONS
-" ======================================
-
-colorscheme tokyonight
-
-" ======================================
-" Plugin Configurations
+" Plugin Configurations ===>
 " ======================================
 
 " ====== NerdTree Plugin ======
@@ -122,7 +123,6 @@ source $HOME/.config/nvim/plug-config/coc.vim
 " ======================================
 
 " ====== General Keybindings ====
-
 
 
 " ====== Normal mode remappings ======
@@ -198,4 +198,7 @@ endif
 
 
 
-
+let g:markdown_fenced_languages = [
+      \ 'vim',
+      \ 'help'
+      \]
