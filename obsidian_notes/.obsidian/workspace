@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
+            "file": "Main Vault/Linux Things & Commands/Run shell scripts at linux startup.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
+                "file": "Main Vault/Linux Things & Commands/Run shell scripts at linux startup.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Main Vault/Web Development Notes/Back End Development/Untitled 7.md"
+                "file": "Main Vault/Linux Things & Commands/Run shell scripts at linux startup.md"
               }
             }
           }
@@ -171,15 +171,15 @@
   },
   "active": "cca3903f7bf327e8",
   "lastOpenFiles": [
+    "Main Vault/Linux Things & Commands/Run shell scripts at linux startup.md",
+    "Image Banners/Images/ssh-keygen-1024x540.png",
     "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
     "Main Vault/Web Development Notes/IDEs Setup/Neovim/Neovim Installation.md",
     "Main Vault/Amazon Books Notes/EBooks To Read.md",
-    "Obsidian Help Guide/Help Guide For Obsidian.md",
+    "Main Vault/Obsidian Help Guide/Help Guide For Obsidian.md",
     "Install.md",
     "1.md",
     "3.md",
-    "Obsidian Help Guide/Untitled.md",
-    "Image Banners/obs_banner.png",
-    "Main Vault/Web Development Notes/GIT Notes/Private & Public SSH Keys.md"
+    "Obsidian Help Guide/Untitled.md"
   ]
 }
