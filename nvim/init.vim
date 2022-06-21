@@ -48,6 +48,10 @@ call plug#begin('~/.config/nvim/autoload')
  Plug 'phaazon/hop.nvim' " Plugin To use To Hop over A document By A set O Letters
  Plug 'preservim/nerdtree' " NerdTree Plugin
  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Highlighting Code
+ Plug 'luochen1990/rainbow' " Color The Parerenthis and brackets surronding
+ Plug 'tpope/vim-surround' " Surround.vim is all about 'surroundings': parentheses, brackets, quotes, XML tags, and more.
+ " Plug 'adi/vim-indent-rainbow'
+
 
 " === Lsp Plugins ===
  
@@ -103,6 +107,9 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
+" ====== Rainbow Configs ======
+ 
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 " ======================================
 " Lua Configurations
@@ -117,7 +124,7 @@ lua require('Bader-Dev')
 " ====== COC Configuretions ======
 
 source $HOME/.config/nvim/plug-config/coc.vim
-
+" source $HOME/.config/nvim/autoload/tagalong.vim
 " ======================================
 " Keyboard Bindings
 " ======================================
@@ -174,8 +181,6 @@ if executable(s:clip)
 endif
 
 " ====== Insert Mode remappings ======
-
-
 
 
 
