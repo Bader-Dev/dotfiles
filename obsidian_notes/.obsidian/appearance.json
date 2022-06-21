@@ -1,5 +1,8 @@
 {
   "cssTheme": "Minimal",
   "theme": "obsidian",
-  "translucency": false
+  "translucency": false,
+  "enabledCssSnippets": [
+    "imagezoom"
+  ]
 }

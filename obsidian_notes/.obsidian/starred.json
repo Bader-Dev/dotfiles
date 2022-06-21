@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "Neovim Installation",
+      "path": "Main Vault/Linux Things & Commands/IDEs Setup/Neovim/Neovim Installation.md"
+    },
+    {
+      "type": "file",
+      "title": "Vim shortcuts With Images",
+      "path": "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim shortcuts With Images.md"
+    }
+  ]
+}
