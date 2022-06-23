@@ -1,3 +1,3 @@
-require('Bader-Dev.lspconfig')
-require('Bader-Dev.hop')
-require('Bader-Dev.treesitter')
+require('Bader-Dev.lspconfig') -- Requires Lspconfig Config
+require('Bader-Dev.hop') -- Requires Hop Config
+require('Bader-Dev.treesitter') -- Requires Treesitter Config

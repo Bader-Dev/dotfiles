@@ -1,13 +1,13 @@
 " ==================================
 " GENERAL SETTINGS ===>
 " ==================================
-
 set nocompatible            " disable compatibility to old-time v:i
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
 set mouse=a                 " middle-click paste with 
 set hlsearch                " highlight search 
 set incsearch               " incremental search
+set ic                      " Add Case Insensitive To earch Commmand
 set tabstop=4               " number of columns occupied by a tab 
 set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab               " converts tabs to white space
@@ -50,8 +50,7 @@ call plug#begin('~/.config/nvim/autoload')
  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Highlighting Code
  Plug 'luochen1990/rainbow' " Color The Parerenthis and brackets surronding
  Plug 'tpope/vim-surround' " Surround.vim is all about 'surroundings': parentheses, brackets, quotes, XML tags, and more.
- " Plug 'adi/vim-indent-rainbow'
-
+ Plug 'preservim/nerdcommenter'
 
 " === Lsp Plugins ===
  
@@ -66,11 +65,15 @@ call plug#begin('~/.config/nvim/autoload')
  Plug 'folke/tokyonight.nvim' " TokyoNight Theme
  Plug 'EdenEast/nightfox.nvim' " Nightfox Theme
  Plug 'sainnhe/sonokai' " Sonokai Theme 
+ Plug 'joshdick/onedark.vim' 
+ Plug 'Rigellute/shades-of-purple.vim'
 
  " === UI/UX Plugins ===
-
+ 
+ 
+ 
+ 
  Plug 'scrooloose/nerdtree'
-" Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify' " Nice Looking Starting Page
  Plug 'ryanoasis/vim-devicons' " Plugin For Icons In Vim 
  Plug 'vim-airline/vim-airline' " Nice Looking Bottom Bar
@@ -84,8 +87,8 @@ call plug#begin('~/.config/nvim/autoload')
 " THEMING CONFIGURATIONS ===>
 " ======================================
 
-colorscheme sonokai
-
+colorscheme tokyonight 
+ 
 " ======================================
 " Plugin Configurations ===>
 " ======================================
@@ -124,6 +127,7 @@ lua require('Bader-Dev')
 " ====== COC Configuretions ======
 
 source $HOME/.config/nvim/plug-config/coc.vim
+
 " source $HOME/.config/nvim/autoload/tagalong.vim
 " ======================================
 " Keyboard Bindings
@@ -131,6 +135,9 @@ source $HOME/.config/nvim/plug-config/coc.vim
 
 " ====== General Keybindings ====
 
+nnoremap <C-q> :q!<cr>
+nnoremap <C-s> :wq<cr>
+nnoremap <C-w> :w<cr>
 
 " ====== Normal mode remappings ======
 
@@ -150,13 +157,13 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 
 " === NerdCommenter Keybindings ===
 
-nnoremap <leader>p <Plug>NERDCommenterToggle
+nnoremap <leader>c <Plug>NERDCommenterToggle
 
 " === Hop Keybindings ===
 
 nnoremap <leader>fl <cmd>:HopLine<cr>
 
-" === Vim-Snippets ===
+" === Vim-Snippets Keybindings ===
 
 " Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
@@ -167,21 +174,3 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-
-
-
-" ====== Visual Mode remappings ======
-
-let s:clip = '/mnt/c/Windows/System31/clip.exe'  " change this path according to your mount point
-if executable(s:clip)
-    augroup WSLYank
-        autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @-1) | endif
-    augroup END
-endif
-
-" ====== Insert Mode remappings ======
-
-
-
-
