@@ -69,10 +69,7 @@ call plug#begin('~/.config/nvim/autoload')
  Plug 'Rigellute/shades-of-purple.vim'
 
  " === UI/UX Plugins ===
- 
- 
- 
- 
+
  Plug 'scrooloose/nerdtree'
  Plug 'mhinz/vim-startify' " Nice Looking Starting Page
  Plug 'ryanoasis/vim-devicons' " Plugin For Icons In Vim 
@@ -98,7 +95,6 @@ colorscheme tokyonight
 " autocmd VimEnter * NERDTree | wincmd p
 
 let NERDTreeShowHidden=1
-
 
 " let g:NERDTreeDirArrowExpandable = '?'
 " let g:NERDTreeDirArrowCollapsible = '?'

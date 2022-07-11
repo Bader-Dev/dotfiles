@@ -7,13 +7,8 @@
         "id": "acee9521182d25d8",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim Shortcuts And Keybindings.md",
-            "mode": "source",
-            "backlinks": false,
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -94,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim Shortcuts And Keybindings.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,9 +104,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim Shortcuts And Keybindings.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -172,15 +164,15 @@
   },
   "active": "acee9521182d25d8",
   "lastOpenFiles": [
+    "Image Banners/Images/cheatvim (1).png",
     "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim Shortcuts And Keybindings.md",
-    "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim Shortcuts And Keybindings.md",
+    "Main Vault/Web Development Notes/GIT Notes/Private & Public SSH Keys.md",
+    "Main Vault/Web Development Notes/Back End Development/Untitled 7.md",
     "Main Vault/Linux Things & Commands/IDEs Setup/Vim/Vim shortcuts With Images.md",
     "Main Vault/Linux Things & Commands/IDEs Setup/Neovim/Neovim Installation.md",
     "Image Banners/Images/cheatvim (3).png",
     "Image Banners/Images/cheatvim (2).jpg",
     "Main Vault/Obsidian Help Guide/Help Guide For Obsidian.md",
-    "Main Vault/Web Development Notes/GIT Notes/Private & Public SSH Keys.md",
-    "Image Banners/Images/ssh-keygen-1024x540.png",
-    "Main Vault/Web Development Notes/Back End Development/Untitled 7.md"
+    "Image Banners/Images/ssh-keygen-1024x540.png"
   ]
 }
